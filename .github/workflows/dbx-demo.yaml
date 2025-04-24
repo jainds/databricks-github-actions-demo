@@ -63,7 +63,7 @@ jobs:
 
       # Run the Databricks workflow named "my-job" as defined in the
       # bundle that was just deployed.
-      - run: databricks bundle run -t qa dbx_dummy_job --refresh-all
+      - run: databricks bundle run dbx_dummy_job --refresh-all
         working-directory: ./projects/dummy-pipeline-project
         env:
           DATABRICKS_TOKEN: ${{ secrets.DBX_TOKEN }}
