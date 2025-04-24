@@ -1,0 +1,15 @@
+resources:
+    jobs:
+        my_job:
+        name: dbx_dummy_job
+        tasks:
+            - task_key:  my-python-script-task
+            spark_python_task:
+                python_file: ../src/dummy.py
+            environment_key: Default
+        queue:
+          enabled: true
+        environments:
+          - environment_key: Default
+            spec:
+              client: "2"

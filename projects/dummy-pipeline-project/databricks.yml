@@ -1,0 +1,15 @@
+bundle:
+  name: dbx-dummy-github-action
+
+include:
+  ./resources/dbx-workflow.yml
+
+targets:
+  # The deployment targets. See https://docs.databricks.com/en/dev-tools/bundles/deployment-modes.html
+  qa:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-99c4ba30-1247.cloud.databricks.com
+      token: <your-databricks-token>
+
