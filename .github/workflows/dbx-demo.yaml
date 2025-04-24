@@ -24,7 +24,7 @@ jobs:
 
     - name: Authenticate Databricks CLI
       env:
-        DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+        DATABRICKS_HOST: https://dbc-99c4ba30-1247.cloud.databricks.com
         DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
       run: |
         databricks configure --token <<< "${DATABRICKS_HOST}\n${DATABRICKS_TOKEN}"
