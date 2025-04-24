@@ -11,5 +11,3 @@ targets:
     default: true
     workspace:
       host: https://dbc-99c4ba30-1247.cloud.databricks.com
-      token: <your-databricks-token>
-
