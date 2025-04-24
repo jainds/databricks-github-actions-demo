@@ -2,7 +2,7 @@ bundle:
   name: dbx-dummy-github-action
 
 include:
-  ./resources/dbx-workflow.yml
+  - ./resources/dbx-workflow.yml
 
 targets:
   # The deployment targets. See https://docs.databricks.com/en/dev-tools/bundles/deployment-modes.html
