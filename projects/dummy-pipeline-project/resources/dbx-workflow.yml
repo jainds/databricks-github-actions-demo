@@ -1,6 +1,6 @@
 resources:
     jobs:
-        my_job:
+        dbx_dummy_job:
           name: dbx_dummy_job
           tasks:
               - task_key:  my-python-script-task
